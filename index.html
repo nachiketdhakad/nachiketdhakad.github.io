@@ -1,0 +1,634 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/onda/
+  Source: https://github.com/8bsite/design-studio-website-template
+  MIT License (code) https://8b.com/ · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nachiket Dhakad | Portfolio</title>
+<meta name="description" content="Portfolio of Nachiket Dhakad, data analyst: Python, Pandas, SQL, Excel and Power BI projects.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nachiket Dhakad | Portfolio">
+<meta property="og:description" content="Portfolio of Nachiket Dhakad, data analyst: Python, Pandas, SQL, Excel and Power BI projects.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%236c3cff'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23ffffff'%3EN%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="m-text">
+<a class="skip" href="#main">Skip to content</a>
+<!-- navigation: fixed top bar: wordmark, section links, Contact me button; phone menu overlay -->
+<header id="navigation" class="nav" data-8b-section="navigation">
+  <a class="nav__brand" href="#hero" aria-label="Nachiket Dhakad, back to the top">Nachiket<span class="m-dot" aria-hidden="true"></span></a>
+  <nav class="nav__links" aria-label="Main">
+    <ul>
+      <li><a class="m-link-2" href="#work">Projects</a></li>
+      <li><a class="m-link-2" href="#capabilities">What I do</a></li><li><a class="m-link-2" href="#method">How I work</a></li>
+      <li><a class="m-link-2" href="#studio">About</a></li>
+      </ul>
+  </nav>
+  <a class="m-btn nav__cta" href="mailto:nachiketdhakad145@gmail.com"><span class="m-btn__label">Email me</span></a>
+  <button class="m-btn-2 nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="m-btn__label">Menu</span></button>
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-lenis-prevent hidden>
+    <div class="menu__top"><button class="m-icon menu__close" type="button" aria-label="Close the menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg></button></div>
+    <ul class="menu__list">
+      <li><a href="#work">Projects<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#capabilities">What I do<span class="m-dot" aria-hidden="true"></span></a></li><li><a href="#method">How I work<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#studio">About<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="mailto:nachiketdhakad145@gmail.com.com">Email<span class="m-dot" aria-hidden="true"></span></a></li>
+    </ul>
+    <p class="m-text menu__foot">nachiketdhakad145@gmail.com.com · Indore, India</p>
+  </div>
+</header>
+<main id="main">
+<!-- hero: first screen: a one-word greeting whose full stop is a giant round photo (demo: "Hello") (animation: scene:hero) -->
+<section id="hero" data-8b-section="hero" aria-labelledby="hero-title">
+  <div class="hero__intro">
+    <p class="m-text-5 hero__lead">I'm Nachiket Dhakad, a data analyst from Indore. I turn raw data into clear insights with Python, SQL, Excel and Power BI.</p>
+    <a class="m-link hero__link" href="#work"><span class="m-link__label">See my projects</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+  </div>
+  <h1 class="m-text-2 hero__title" id="hero-title" style="--len:5"><span class="hero__word"><span class="hero__mask"><span class="hero__glyphs">Hello</span></span></span><span class="hero__period" aria-hidden="true"><span class="hero__stage"><span class="hero__orbit"><span class="hero__moon"></span></span><span class="hero__aperture"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjkwIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU2IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii44Ii8+PHJlY3QgeD0iMTEwIiB5PSIxNzAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4xNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMTcwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4yNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMjc2IiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii41Ii8+PHJlY3QgeD0iMTMwIiB5PSIxOTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iMTYiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNiIvPjxyZWN0IHg9IjEzMCIgeT0iMjI1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjMiLz48cmVjdCB4PSIxMzAiIHk9IjI0NyIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMCIgcng9IjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4zIi8+PC9zdmc+" style="background:#590ca6 url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAYHBwkLCQwNDQwQERAREBgWFBQWGCMZGxkbGSM1ISchISchNS85LysvOS9UQjs7QlRhUk5SYXZpaXaUjZTBwf8BBgcHCQsJDA0NDBAREBEQGBYUFBYYIxkbGRsZIzUhJyEhJyE1LzkvKy85L1RCOztCVGFSTlJhdmlpdpSNlMHB///AABEIACAAIAMBIgACEQEDEQH/xABwAAAABwEAAAAAAAAAAAAAAAAAAQIDBAUGBxAAAgIBAwQCAwAAAAAAAAAAAQIDEQAEElEFIUFxEzEiI7EBAQADAQAAAAAAAAAAAAAAAAIAAQUHEQACAgICAwEAAAAAAAAAAAABEQACAxIhUQQiQXH/2gAMAwEAAhEDEQA/AOTxhiaJ81kvqawDU1p1dEFD7Pfk4pI/0Fx3a/rEz1PESIyD4F8Z06vj10txyuJvjENT38gSGkP5tfu8VAsRC/NZTftJH9xxNSzadUjINi2Zj99+PFYHjVlKrd3XvFiwkbIIKXXGQ11KyR9SrpcTiNh3Hg3mn6cySaOWMxmkG68j65RDHGm8SJd0vGE/UwsDLW2wLpdooeAOMeK+r3sSW/yPHdH2MzesUxNwdxywVmMAYej7yLPKJHYkg2cegkVSVYgiQHtjpko7BoEIGSt6shphT//Z) 50% 50% / cover no-repeat" class="hero__img" width="1200" height="1200" alt="" fetchpriority="high"><span class="hero__tint"></span></span></span></span></h1>
+</section>
+
+<!-- statement: two-line statement of what the studio does, a lead paragraph and an index of links into the page (animation: scene:statement) -->
+<section id="statement" data-8b-section="statement" aria-labelledby="statement-title">
+  <h2 class="m-text-3 statement__title" id="statement-title"><span class="statement__line">I turn data</span><span class="statement__line">into clear&nbsp;decisions<span class="m-dot statement__dot" aria-hidden="true"></span></span></h2>
+  <div class="statement__body">
+    <p class="m-text-5 statement__lead" data-8b-motion="ink">Python, Pandas, SQL, Excel and Power BI to clean, analyse and visualise data. Take a look at my projects, or send me a message.</p>
+    <nav class="statement__index" aria-label="On this page">
+      <ul>
+        <li><a class="m-link" href="#work"><span class="m-link__label">See my projects</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#capabilities"><span class="m-link__label">What I do</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#method"><span class="m-link__label">How I work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#studio"><span class="m-link__label">About me</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="mailto:your-nachiketdhakad90@gmail.com"><span class="m-link__label">Email me</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+      </ul>
+    </nav
+  </div>
+</section>
+
+<!-- work: case studies: five large cards on a horizontal track (demo: five client launches) (animation: scene:work) -->
+<section id="work" data-8b-section="work" aria-labelledby="work-title">
+  <div class="work__plate" aria-hidden="true"></div>
+  <div class="work__stage">
+    <div class="work__head">
+      <h2 class="m-text-3" id="work-title">My projects<span class="m-dot" aria-hidden="true"></span></h2>
+      <p class="m-text-5 work__lead">Click a project to open it. More data projects are on the way.</p>
+    </div>
+    <div class="work__window">
+      <ul class="work__track">
+        <li class="case" data-href="https://nk-s-hub.onrender.com/" tabindex="0" role="button" aria-label="Open NK's Hub live site">
+          <div class="case__media"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSI5MCIgeT0iOTAiIHdpZHRoPSI2MjAiIGhlaWdodD0iMzIwIiByeD0iMTYiIGZpbGw9IiMxNzEyMzMiIHN0cm9rZT0iIzhiNWNmZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PGNpcmNsZSBjeD0iMTI1IiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjZmY2YjZiIi8+PGNpcmNsZSBjeD0iMTQ4IiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjZmZkMTY2Ii8+PGNpcmNsZSBjeD0iMTcxIiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjMDZkNmEwIi8+PHJlY3QgeD0iMTMwIiB5PSIxNjUiIHdpZHRoPSIzMDAiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIwLjkiLz48cmVjdCB4PSIxNjAiIHk9IjE5NyIgd2lkdGg9IjI3NSIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMzUiLz48cmVjdCB4PSIxMzAiIHk9IjIyOSIgd2lkdGg9IjI1MCIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMzUiLz48cmVjdCB4PSIxNjAiIHk9IjI2MSIgd2lkdGg9IjIyNSIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9IjAuOSIvPjxyZWN0IHg9IjEzMCIgeT0iMjkzIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4zNSIvPjxyZWN0IHg9IjE2MCIgeT0iMzI1IiB3aWR0aD0iMTc1IiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4zNSIvPjxyZWN0IHg9IjEzMCIgeT0iMzU3IiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC45Ii8+PHJlY3QgeD0iNTAwIiB5PSIxNjUiIHdpZHRoPSIxNzAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii4zNSIvPjwvc3ZnPg==" style="background:#c0c0c0" class="case__img" width="1600" height="1000" alt="Decorative photo" loading="lazy"></div>
+          <span class="m-badge case__tag">Django</span>
+          <div class="case__text"><h3 class="m-text-4 case__name">NK's Hub</h3><p class="m-text-5 case__line">My Django web project, live on the internet. Click to open the site.</p></div>
+        </li>
+        <li class="case" data-href="https://github.com/YOUR-USERNAME/YOUR-USERNAME.github.io" tabindex="0" role="button" aria-label="Open This Portfolio on GitHub">
+          <div class="case__media"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjkwIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU2IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii44Ii8+PHJlY3QgeD0iMTEwIiB5PSIxNzAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4xNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMTcwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4yNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMjc2IiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii41Ii8+PHJlY3QgeD0iMTMwIiB5PSIxOTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iMTYiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNiIvPjxyZWN0IHg9IjEzMCIgeT0iMjI1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjMiLz48cmVjdCB4PSIxMzAiIHk9IjI0NyIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMCIgcng9IjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4zIi8+PC9zdmc+" style="background:#d9d9d9" class="case__img" width="1600" height="1000" alt="A red and silver dumbbell on a black surface" loading="lazy"></div>
+          <span class="m-badge case__tag">HTML · CSS · JS</span>
+          <div class="case__text"><h3 class="m-text-4 case__name">This Portfolio</h3><p class="m-text-5 case__line">My personal portfolio, hosted for free on GitHub Pages.</p></div>
+        </li>
+        <li class="case" data-href="" tabindex="0" role="button" aria-label="Data Analysis Project coming soon">
+          <div class="case__media"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjI5MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjkwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMTgwIiB5PSIyMzAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNTAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48cmVjdCB4PSIyNTAiIHk9IjI2MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEyMCIgcng9IjgiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNCIvPjxyZWN0IHg9IjMyMCIgeT0iMTcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjEwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMzkwIiB5PSIxMjAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyNjAiIHJ4PSI4IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIxIi8+PHJlY3QgeD0iNDYwIiB5PSIyMDAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxODAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIuMjUiIHN0cm9rZS13aWR0aD0iMjYiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiM4YjVjZmYiIHN0cm9rZS13aWR0aD0iMjYiIHN0cm9rZS1kYXNoYXJyYXk9IjI5MCA0NDAiIHRyYW5zZm9ybT0icm90YXRlKC05MCA2NDAgMTcwKSIvPjxyZWN0IHg9IjEwMCIgeT0iOTAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==" style="background:#a68cd9" class="case__img" width="1600" height="1000" alt="Decorative photo" loading="lazy"></div>
+          <span class="m-badge case__tag">Data</span>
+          <div class="case__text"><h3 class="m-text-4 case__name">Data Analysis Project</h3><p class="m-text-5 case__line">Coming soon: Python, Pandas, SQL and a Power BI dashboard.</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- again: long-term clients: six cards on a wheel that turns with scroll (demo: years of partnership) (animation: scene:again) -->
+<section id="again" data-8b-section="again" aria-labelledby="again-title">
+  <div class="again__stage">
+    <div class="again__head">
+      <h2 class="m-text-3" id="again-title">My skills<span class="m-dot" aria-hidden="true"></span></h2>
+      <p class="m-text-5 again__lead">The tools I use to turn data into answers.</p>
+    </div>
+    <div class="again__swing">
+      <ul class="again__wheel">
+        <li class="partner">
+          <div class="partner__card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjI2MCIgeT0iMTEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIwLjg1Ii8+PHJlY3QgeD0iNDEwIiB5PSIxMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9IjAuODUiLz48cmVjdCB4PSI1NjAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjExMCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMjYwIiB5PSIxNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSI0MTAiIHk9IjE2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjU2MCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMTEwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSIyNjAiIHk9IjIxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjQxMCIgeT0iMjEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNTYwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIxMTAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjI2MCIgeT0iMjYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNDEwIiB5PSIyNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI1NjAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjExMCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMjYwIiB5PSIzMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI0MTAiIHk9IjMxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjU2MCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMTEwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIyNjAiIHk9IjM2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjQxMCIgeT0iMzYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iNTYwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48L3N2Zz4=" style="background:#26260c" class="partner__img" width="900" height="1125" alt="Decorative photo" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Language</span><h3 class="m-text-4 partner__name">Python</h3><p class="m-text partner__line">Scripts to clean, analyse and automate data work.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjI5MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjkwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMTgwIiB5PSIyMzAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNTAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48cmVjdCB4PSIyNTAiIHk9IjI2MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEyMCIgcng9IjgiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNCIvPjxyZWN0IHg9IjMyMCIgeT0iMTcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjEwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMzkwIiB5PSIxMjAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyNjAiIHJ4PSI4IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIxIi8+PHJlY3QgeD0iNDYwIiB5PSIyMDAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxODAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIuMjUiIHN0cm9rZS13aWR0aD0iMjYiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiM4YjVjZmYiIHN0cm9rZS13aWR0aD0iMjYiIHN0cm9rZS1kYXNoYXJyYXk9IjI5MCA0NDAiIHRyYW5zZm9ybT0icm90YXRlKC05MCA2NDAgMTcwKSIvPjxyZWN0IHg9IjEwMCIgeT0iOTAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==" style="background:#262626" class="partner__img" width="900" height="1125" alt="Decorative photo" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Analysis</span><h3 class="m-text-4 partner__name">Pandas</h3><p class="m-text partner__line">DataFrames, cleaning, grouping, merging and summaries.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjkwIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU2IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii44Ii8+PHJlY3QgeD0iMTEwIiB5PSIxNzAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4xNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMTcwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4yNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMjc2IiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii41Ii8+PHJlY3QgeD0iMTMwIiB5PSIxOTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iMTYiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNiIvPjxyZWN0IHg9IjEzMCIgeT0iMjI1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjMiLz48cmVjdCB4PSIxMzAiIHk9IjI0NyIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMCIgcng9IjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4zIi8+PC9zdmc+" style="background:#d9d9d9" class="partner__img" width="900" height="1125" alt="A red and silver dumbbell on a black surface" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Database</span><h3 class="m-text-4 partner__name">SQL</h3><p class="m-text partner__line">Queries, joins, aggregations and subqueries.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSI5MCIgeT0iOTAiIHdpZHRoPSI2MjAiIGhlaWdodD0iMzIwIiByeD0iMTYiIGZpbGw9IiMxNzEyMzMiIHN0cm9rZT0iIzhiNWNmZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PGNpcmNsZSBjeD0iMTI1IiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjZmY2YjZiIi8+PGNpcmNsZSBjeD0iMTQ4IiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjZmZkMTY2Ii8+PGNpcmNsZSBjeD0iMTcxIiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjMDZkNmEwIi8+PHJlY3QgeD0iMTMwIiB5PSIxNjUiIHdpZHRoPSIzMDAiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIwLjkiLz48cmVjdCB4PSIxNjAiIHk9IjE5NyIgd2lkdGg9IjI3NSIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMzUiLz48cmVjdCB4PSIxMzAiIHk9IjIyOSIgd2lkdGg9IjI1MCIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMzUiLz48cmVjdCB4PSIxNjAiIHk9IjI2MSIgd2lkdGg9IjIyNSIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9IjAuOSIvPjxyZWN0IHg9IjEzMCIgeT0iMjkzIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4zNSIvPjxyZWN0IHg9IjE2MCIgeT0iMzI1IiB3aWR0aD0iMTc1IiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4zNSIvPjxyZWN0IHg9IjEzMCIgeT0iMzU3IiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC45Ii8+PHJlY3QgeD0iNTAwIiB5PSIxNjUiIHdpZHRoPSIxNzAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii4zNSIvPjwvc3ZnPg==" style="background:#590c0c" class="partner__img" width="900" height="1125" alt="Decorative photo" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Spreadsheet</span><h3 class="m-text-4 partner__name">Excel</h3><p class="m-text partner__line">Formulas, pivot tables, charts and dashboards.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjI2MCIgeT0iMTEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIwLjg1Ii8+PHJlY3QgeD0iNDEwIiB5PSIxMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9IjAuODUiLz48cmVjdCB4PSI1NjAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjExMCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMjYwIiB5PSIxNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSI0MTAiIHk9IjE2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjU2MCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMTEwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSIyNjAiIHk9IjIxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjQxMCIgeT0iMjEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNTYwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIxMTAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjI2MCIgeT0iMjYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNDEwIiB5PSIyNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI1NjAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjExMCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMjYwIiB5PSIzMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI0MTAiIHk9IjMxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjU2MCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMTEwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIyNjAiIHk9IjM2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjQxMCIgeT0iMzYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iNTYwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48L3N2Zz4=" style="background:#4073a6" class="partner__img" width="900" height="1125" alt="Decorative photo" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Dashboards</span><h3 class="m-text-4 partner__name">Power BI</h3><p class="m-text partner__line">Interactive dashboards, KPIs and reports.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjI5MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjkwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMTgwIiB5PSIyMzAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNTAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48cmVjdCB4PSIyNTAiIHk9IjI2MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEyMCIgcng9IjgiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNCIvPjxyZWN0IHg9IjMyMCIgeT0iMTcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjEwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMzkwIiB5PSIxMjAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyNjAiIHJ4PSI4IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIxIi8+PHJlY3QgeD0iNDYwIiB5PSIyMDAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxODAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIuMjUiIHN0cm9rZS13aWR0aD0iMjYiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiM4YjVjZmYiIHN0cm9rZS13aWR0aD0iMjYiIHN0cm9rZS1kYXNoYXJyYXk9IjI5MCA0NDAiIHRyYW5zZm9ybT0icm90YXRlKC05MCA2NDAgMTcwKSIvPjxyZWN0IHg9IjEwMCIgeT0iOTAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==" style="background:#d9c08c" class="partner__img" width="900" height="1125" alt="Decorative photo" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Web</span><h3 class="m-text-4 partner__name">Django</h3><p class="m-text partner__line">Web apps with models, views, admin and a database.</p></div></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- capabilities: services: five cards that stack as you scroll, each with deliverable badges and a photo (animation: scene:capabilities) -->
+<section id="capabilities" data-8b-section="capabilities" aria-labelledby="capabilities-title">
+  <div class="capabilities__head">
+    <h2 class="m-text-3" id="capabilities-title" data-8b-motion="rise">What I do<span class="m-dot" aria-hidden="true"></span></h2>
+    <p class="m-text-5 capabilities__lead">What I can do for you.</p>
+  </div>
+  <ol class="capabilities__deck">
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Data cleaning and analysis</h3>
+        <p class="m-text-5 service__line">Turn messy files into clean, reliable data with Python and Pandas.</p>
+        <ul class="service__tags"><li class="m-badge">Pandas</li><li class="m-badge">Cleaning</li><li class="m-badge">EDA</li><li class="m-badge">Automation</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjkwIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU2IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii44Ii8+PHJlY3QgeD0iMTEwIiB5PSIxNzAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4xNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMTcwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4yNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMjc2IiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii41Ii8+PHJlY3QgeD0iMTMwIiB5PSIxOTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iMTYiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNiIvPjxyZWN0IHg9IjEzMCIgeT0iMjI1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjMiLz48cmVjdCB4PSIxMzAiIHk9IjI0NyIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMCIgcng9IjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4zIi8+PC9zdmc+" style="background:#f3f3f3" width="1200" height="900" alt="A red and silver dumbbell on a black surface" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">SQL and Excel reporting</h3>
+        <p class="m-text-5 service__line">Pull and summarise data with SQL, then answer business questions fast with Excel.</p>
+        <ul class="service__tags"><li class="m-badge">Joins</li><li class="m-badge">Pivot tables</li><li class="m-badge">Formulas</li><li class="m-badge">Charts</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjI2MCIgeT0iMTEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIwLjg1Ii8+PHJlY3QgeD0iNDEwIiB5PSIxMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9IjAuODUiLz48cmVjdCB4PSI1NjAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjExMCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMjYwIiB5PSIxNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSI0MTAiIHk9IjE2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjU2MCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMTEwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSIyNjAiIHk9IjIxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjQxMCIgeT0iMjEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNTYwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIxMTAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjI2MCIgeT0iMjYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNDEwIiB5PSIyNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI1NjAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjExMCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMjYwIiB5PSIzMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI0MTAiIHk9IjMxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjU2MCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMTEwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIyNjAiIHk9IjM2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjQxMCIgeT0iMzYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iNTYwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48L3N2Zz4=" style="background:#c0c0c0" width="1200" height="900" alt="Decorative photo" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Power BI dashboards</h3>
+        <p class="m-text-5 service__line">Interactive dashboards that show trends and KPIs at a glance.</p>
+        <ul class="service__tags"><li class="m-badge">Visuals</li><li class="m-badge">KPIs</li><li class="m-badge">Filters</li><li class="m-badge">Reports</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjI5MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjkwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMTgwIiB5PSIyMzAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNTAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48cmVjdCB4PSIyNTAiIHk9IjI2MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEyMCIgcng9IjgiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNCIvPjxyZWN0IHg9IjMyMCIgeT0iMTcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjEwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMzkwIiB5PSIxMjAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyNjAiIHJ4PSI4IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIxIi8+PHJlY3QgeD0iNDYwIiB5PSIyMDAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxODAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIuMjUiIHN0cm9rZS13aWR0aD0iMjYiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiM4YjVjZmYiIHN0cm9rZS13aWR0aD0iMjYiIHN0cm9rZS1kYXNoYXJyYXk9IjI5MCA0NDAiIHRyYW5zZm9ybT0icm90YXRlKC05MCA2NDAgMTcwKSIvPjxyZWN0IHg9IjEwMCIgeT0iOTAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==" style="background:#262626" width="1200" height="900" alt="Decorative photo" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Django web apps</h3>
+        <p class="m-text-5 service__line">Web apps with a database, admin panel and forms.</p>
+        <ul class="service__tags"><li class="m-badge">Models</li><li class="m-badge">Views</li><li class="m-badge">Admin</li><li class="m-badge">Security</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSI5MCIgeT0iOTAiIHdpZHRoPSI2MjAiIGhlaWdodD0iMzIwIiByeD0iMTYiIGZpbGw9IiMxNzEyMzMiIHN0cm9rZT0iIzhiNWNmZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PGNpcmNsZSBjeD0iMTI1IiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjZmY2YjZiIi8+PGNpcmNsZSBjeD0iMTQ4IiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjZmZkMTY2Ii8+PGNpcmNsZSBjeD0iMTcxIiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjMDZkNmEwIi8+PHJlY3QgeD0iMTMwIiB5PSIxNjUiIHdpZHRoPSIzMDAiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIwLjkiLz48cmVjdCB4PSIxNjAiIHk9IjE5NyIgd2lkdGg9IjI3NSIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMzUiLz48cmVjdCB4PSIxMzAiIHk9IjIyOSIgd2lkdGg9IjI1MCIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMzUiLz48cmVjdCB4PSIxNjAiIHk9IjI2MSIgd2lkdGg9IjIyNSIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9IjAuOSIvPjxyZWN0IHg9IjEzMCIgeT0iMjkzIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4zNSIvPjxyZWN0IHg9IjE2MCIgeT0iMzI1IiB3aWR0aD0iMTc1IiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4zNSIvPjxyZWN0IHg9IjEzMCIgeT0iMzU3IiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC45Ii8+PHJlY3QgeD0iNTAwIiB5PSIxNjUiIHdpZHRoPSIxNzAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii4zNSIvPjwvc3ZnPg==" style="background:#c0c0d9" width="1200" height="900" alt="Decorative photo" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Always learning</h3>
+        <p class="m-text-5 service__line">Practice code and notes on GitHub as I grow.</p>
+        <ul class="service__tags"><li class="m-badge">GitHub</li><li class="m-badge">Practice</li><li class="m-badge">Notes</li><li class="m-badge">Projects</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjkwIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU2IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii44Ii8+PHJlY3QgeD0iMTEwIiB5PSIxNzAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4xNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMTcwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4yNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMjc2IiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii41Ii8+PHJlY3QgeD0iMTMwIiB5PSIxOTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iMTYiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNiIvPjxyZWN0IHg9IjEzMCIgeT0iMjI1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjMiLz48cmVjdCB4PSIxMzAiIHk9IjI0NyIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMCIgcng9IjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4zIi8+PC9zdmc+" style="background:#260c40" width="1200" height="900" alt="A red and silver dumbbell on a black surface" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+  </ol>
+</section>
+
+
+
+<!-- method: process: four steps beside a ring the scroll draws round (demo: Listen, Make, Measure, Again) (animation: scene:method) -->
+<section id="method" data-8b-section="method" aria-labelledby="method-title">
+  <div class="method__head">
+    <h2 class="m-text-3" id="method-title" data-8b-motion="rise">How I work<span class="m-dot" aria-hidden="true"></span></h2>
+    <p class="m-text-5 method__lead" data-8b-motion="ink">Every analysis follows the same four steps. The last one is where data becomes a decision.</p>
+  </div>
+  <div class="method__body">
+    <div class="method__ring" aria-hidden="true">
+      <svg class="method__svg" viewBox="0 0 400 400"><circle class="method__track" cx="200" cy="200" r="170"/><circle class="method__arc" cx="200" cy="200" r="170" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0"/></svg>
+      <span class="method__station" style="--x:0;--y:-1"></span>
+      <span class="method__station" style="--x:1;--y:0"></span>
+      <span class="method__station" style="--x:0;--y:1"></span>
+      <span class="method__station" style="--x:-1;--y:0"></span>
+      <span class="method__arm"><span class="method__runner"></span></span>
+    </div>
+    <ol class="method__steps">
+      <li class="step"><h3 class="m-text-4">Ask</h3><p class="m-text-5 step__text">Understand the business question and what decision the data should support.</p></li>
+      <li class="step"><h3 class="m-text-4">Clean</h3><p class="m-text-5 step__text">Collect the data, fix missing values and duplicates, and check quality.</p></li>
+      <li class="step"><h3 class="m-text-4">Analyse</h3><p class="m-text-5 step__text">Explore with Python, SQL and Excel to find patterns, trends and answers.</p></li>
+      <li class="step"><h3 class="m-text-4">Share</h3><p class="m-text-5 step__text">Present the findings in a clear dashboard or report, then refine with feedback.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- studio: team and careers: photo collage that deals out from a pile, with open roles (animation: scene:studio) -->
+<section id="studio" data-8b-section="studio" aria-labelledby="studio-title">
+  <div class="studio__head">
+    <h2 class="m-text-3" id="studio-title">About me<span class="m-dot" aria-hidden="true"></span></h2>
+    <p class="m-text-5 studio__lead" data-8b-motion="ink">I'm a 1st-year BCA student at Oriental University, Indore, with a specialization in AIDA. I enjoy turning raw numbers into clear stories, working with Python, Pandas, SQL, Excel and Power BI, and I also build web projects with Django.</p>
+  </div>
+  <div class="studio__collage">
+    <figure class="shot shot--wide"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjI2MCIgeT0iMTEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIwLjg1Ii8+PHJlY3QgeD0iNDEwIiB5PSIxMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9IjAuODUiLz48cmVjdCB4PSI1NjAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjExMCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMjYwIiB5PSIxNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSI0MTAiIHk9IjE2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjU2MCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMTEwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSIyNjAiIHk9IjIxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjQxMCIgeT0iMjEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNTYwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIxMTAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjI2MCIgeT0iMjYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNDEwIiB5PSIyNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI1NjAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjExMCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMjYwIiB5PSIzMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI0MTAiIHk9IjMxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjU2MCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMTEwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIyNjAiIHk9IjM2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjQxMCIgeT0iMzYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iNTYwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48L3N2Zz4=" style="background:#8c8c8c" width="1400" height="933" alt="Decorative photo" loading="lazy"></figure>
+    <figure class="shot shot--tall"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjI5MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjkwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMTgwIiB5PSIyMzAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNTAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48cmVjdCB4PSIyNTAiIHk9IjI2MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEyMCIgcng9IjgiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNCIvPjxyZWN0IHg9IjMyMCIgeT0iMTcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjEwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMzkwIiB5PSIxMjAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyNjAiIHJ4PSI4IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIxIi8+PHJlY3QgeD0iNDYwIiB5PSIyMDAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxODAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIuMjUiIHN0cm9rZS13aWR0aD0iMjYiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiM4YjVjZmYiIHN0cm9rZS13aWR0aD0iMjYiIHN0cm9rZS1kYXNoYXJyYXk9IjI5MCA0NDAiIHRyYW5zZm9ybT0icm90YXRlKC05MCA2NDAgMTcwKSIvPjxyZWN0IHg9IjEwMCIgeT0iOTAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==" style="background:#f3c0a6" width="900" height="1200" alt="Decorative photo" loading="lazy"></figure>
+    <figure class="shot shot--tall"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjkwIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU2IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii44Ii8+PHJlY3QgeD0iMTEwIiB5PSIxNzAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4xNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMTcwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4yNCIvPjxyZWN0IHg9IjQ5MCIgeT0iMjc2IiB3aWR0aD0iMjAwIiBoZWlnaHQ9Ijk0IiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii41Ii8+PHJlY3QgeD0iMTMwIiB5PSIxOTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iMTYiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNiIvPjxyZWN0IHg9IjEzMCIgeT0iMjI1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjMiLz48cmVjdCB4PSIxMzAiIHk9IjI0NyIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMCIgcng9IjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4zIi8+PC9zdmc+" style="background:#a68c73" width="900" height="1200" alt="A red and silver dumbbell on a black surface" loading="lazy"></figure>
+    <figure class="shot shot--wide"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSI5MCIgeT0iOTAiIHdpZHRoPSI2MjAiIGhlaWdodD0iMzIwIiByeD0iMTYiIGZpbGw9IiMxNzEyMzMiIHN0cm9rZT0iIzhiNWNmZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PGNpcmNsZSBjeD0iMTI1IiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjZmY2YjZiIi8+PGNpcmNsZSBjeD0iMTQ4IiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjZmZkMTY2Ii8+PGNpcmNsZSBjeD0iMTcxIiBjeT0iMTIwIiByPSI3IiBmaWxsPSIjMDZkNmEwIi8+PHJlY3QgeD0iMTMwIiB5PSIxNjUiIHdpZHRoPSIzMDAiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIwLjkiLz48cmVjdCB4PSIxNjAiIHk9IjE5NyIgd2lkdGg9IjI3NSIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMzUiLz48cmVjdCB4PSIxMzAiIHk9IjIyOSIgd2lkdGg9IjI1MCIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMzUiLz48cmVjdCB4PSIxNjAiIHk9IjI2MSIgd2lkdGg9IjIyNSIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9IjAuOSIvPjxyZWN0IHg9IjEzMCIgeT0iMjkzIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4zNSIvPjxyZWN0IHg9IjE2MCIgeT0iMzI1IiB3aWR0aD0iMTc1IiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4zNSIvPjxyZWN0IHg9IjEzMCIgeT0iMzU3IiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC45Ii8+PHJlY3QgeD0iNTAwIiB5PSIxNjUiIHdpZHRoPSIxNzAiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9Ii4zNSIvPjwvc3ZnPg==" style="background:#737359" width="1400" height="933" alt="Decorative photo" loading="lazy"></figure>
+    <figure class="shot shot--wide"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjI2MCIgeT0iMTEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIwLjg1Ii8+PHJlY3QgeD0iNDEwIiB5PSIxMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiM4YjVjZmYiIG9wYWNpdHk9IjAuODUiLz48cmVjdCB4PSI1NjAiIHk9IjExMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzhiNWNmZiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjExMCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMjYwIiB5PSIxNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSI0MTAiIHk9IjE2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjU2MCIgeT0iMTYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMTEwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48cmVjdCB4PSIyNjAiIHk9IjIxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjQxMCIgeT0iMjEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNTYwIiB5PSIyMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIxMTAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHg9IjI2MCIgeT0iMjYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iNDEwIiB5PSIyNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI1NjAiIHk9IjI2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjExMCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA4Ii8+PHJlY3QgeD0iMjYwIiB5PSIzMTAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSI0MTAiIHk9IjMxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjU2MCIgeT0iMzEwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iMTEwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB4PSIyNjAiIHk9IjM2MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4wOCIvPjxyZWN0IHg9IjQxMCIgeT0iMzYwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeD0iNTYwIiB5PSIzNjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDgiLz48L3N2Zz4=" style="background:#a6a6a6" width="1400" height="933" alt="Decorative photo" loading="lazy"></figure>
+    <div class="studio__roles">
+      <h3 class="m-text-7" data-8b-motion="rise">Learning now<span class="m-dot" aria-hidden="true"></span></h3>
+      <ul>
+        <li class="role"><span class="m-text-7">Advanced SQL</span><span class="m-text-6 role__place">In progress</span></li>
+        <li class="role"><span class="m-text-7">Power BI (DAX)</span><span class="m-text-6 role__place">Next</span></li>
+        <li class="role"><span class="m-text-7">Machine Learning basics</span><span class="m-text-6 role__place">In progress</span></li>
+      </ul>
+      <a data-8b-placeholder="email" class="m-link" href="mailto:nachiketdhakad145@gmail.com"><span class="m-link__label">nachiketdhakad145@gmail.com</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+</main>
+
+<!-- footer: closing greeting "Bye" with the round photo full stop, link columns, newsletter, copyright and the Design: 8B credit (animation: scene:footer) -->
+<footer id="footer" data-8b-section="footer">
+  <p class="m-text-2 footer__bye" style="--len:3"><span class="footer__word">Bye</span><span class="footer__period" aria-hidden="true"><span class="footer__aperture"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmExYjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGYwYjIyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZykiLz48cmVjdCB4PSIxMTAiIHk9IjI5MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjkwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMTgwIiB5PSIyMzAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNTAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48cmVjdCB4PSIyNTAiIHk9IjI2MCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEyMCIgcng9IjgiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNCIvPjxyZWN0IHg9IjMyMCIgeT0iMTcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjEwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC40Ii8+PHJlY3QgeD0iMzkwIiB5PSIxMjAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyNjAiIHJ4PSI4IiBmaWxsPSIjOGI1Y2ZmIiBvcGFjaXR5PSIxIi8+PHJlY3QgeD0iNDYwIiB5PSIyMDAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxODAiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIuMjUiIHN0cm9rZS13aWR0aD0iMjYiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSIxNzAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiM4YjVjZmYiIHN0cm9rZS13aWR0aD0iMjYiIHN0cm9rZS1kYXNoYXJyYXk9IjI5MCA0NDAiIHRyYW5zZm9ybT0icm90YXRlKC05MCA2NDAgMTcwKSIvPjxyZWN0IHg9IjEwMCIgeT0iOTAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==" style="background:#590ca6 url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAYHBwkLCQwNDQwQERAREBgWFBQWGCMZGxkbGSM1ISchISchNS85LysvOS9UQjs7QlRhUk5SYXZpaXaUjZTBwf8BBgcHCQsJDA0NDBAREBEQGBYUFBYYIxkbGRsZIzUhJyEhJyE1LzkvKy85L1RCOztCVGFSTlJhdmlpdpSNlMHB///AABEIACAAIAMBIgACEQEDEQH/xABwAAAABwEAAAAAAAAAAAAAAAAAAQIDBAUGBxAAAgIBAwQCAwAAAAAAAAAAAQIDEQAEElEFIUFxEzEiI7EBAQADAQAAAAAAAAAAAAAAAAIAAQUHEQACAgICAwEAAAAAAAAAAAABEQACAxIhUQQiQXH/2gAMAwEAAhEDEQA/AOTxhiaJ81kvqawDU1p1dEFD7Pfk4pI/0Fx3a/rEz1PESIyD4F8Z06vj10txyuJvjENT38gSGkP5tfu8VAsRC/NZTftJH9xxNSzadUjINi2Zj99+PFYHjVlKrd3XvFiwkbIIKXXGQ11KyR9SrpcTiNh3Hg3mn6cySaOWMxmkG68j65RDHGm8SJd0vGE/UwsDLW2wLpdooeAOMeK+r3sSW/yPHdH2MzesUxNwdxywVmMAYej7yLPKJHYkg2cegkVSVYgiQHtjpko7BoEIGSt6shphT//Z) 50% 50% / cover no-repeat" class="footer__img" width="1200" height="1200" alt=""><span class="footer__tint"></span></span></span></p>
+  <div class="footer__legal m-text-6"><p>© 2026 Nachiket Dhakad </p><p><a class="m-link-2" href="mailto:nachiketdhakad145@gmail.com">nachiketdhakad145@gmail.com</a> · <a class="m-link-2" href="https://github.com/nachiketdhakad" target="_blank" rel="noopener">GitHub</a></p></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const toggle = nav.querySelector('.nav__menu');
+  const menu = nav.querySelector('.menu');
+  const close = menu.querySelector('.menu__close');
+  const setOpen = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); toggle.focus(); }
+  };
+  toggle.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  menu.addEventListener('keydown', event => {
+    if (event.key === 'Escape') setOpen(false);
+    if (event.key !== 'Tab') return;
+    const items = [...menu.querySelectorAll('a, button')];
+    const first = items[0], last = items[items.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); window.lenis?.start(); }));
+})();
+</script>
+<script data-8b-part="section-script:hero">
+(() => {
+  const hero = document.getElementById('hero');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => hero.classList.toggle('is-offscreen', !entry.isIntersecting)).observe(hero);
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0;
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); });
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+  window.adjacent = (a, b) => {
+    const order = [...document.querySelectorAll('[data-8b-section]')].filter(section => section.getAttribute('data-8b-section') !== 'navigation').map(section => section.id);
+    return order.indexOf(a) >= 0 && order[order.indexOf(a) + 1] === b;
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({ ignoreMobileResize: true });
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+window.refreshScroll = refreshScroll;
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('navigation');
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: -(nav ? nav.offsetHeight : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    const dot = element.querySelector('.m-dot');
+    const timeline = gsap.timeline(vars);
+    timeline.fromTo(element, { yPercent: 38, clipPath: 'inset(0% -6% 100% -6%)' }, { yPercent: 0, clipPath: 'inset(-30% -6% -30% -6%)', duration: 0.95, ease: 'expo.out', clearProps: 'clipPath,transform' }, 0);
+    if (dot) timeline.fromTo(dot, { scale: 0, yPercent: -260 }, { scale: 1, yPercent: 0, duration: 0.75, ease: 'back.out(2.2)', clearProps: 'transform' }, 0.42);
+    return timeline;
+  },
+  ink(element, vars = {}) {
+    const words = element.querySelectorAll('.ink__word');
+    return gsap.timeline(vars).fromTo(words, { opacity: 0.16 }, { opacity: 1, duration: 0.3, stagger: 0.06, ease: 'none' });
+  },
+  iris(element, vars = {}) {
+    const image = element.querySelector('img');
+    const timeline = gsap.timeline(vars);
+    timeline.fromTo(element, { clipPath: 'circle(0% at 50% 50%)' }, { clipPath: 'circle(75% at 50% 50%)', duration: 1.15, ease: 'expo.inOut', clearProps: 'clipPath' }, 0);
+    if (image) timeline.fromTo(image, { scale: 1.2 }, { scale: 1, duration: 1.5, ease: 'expo.out', clearProps: 'transform' }, 0.15);
+    return timeline;
+  }
+};
+function layoutBox(element) {
+  let x = 0, y = 0, node = element;
+  while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+  return { x, y, w: element.offsetWidth, h: element.offsetHeight, cx: x + element.offsetWidth / 2, cy: y + element.offsetHeight / 2 };
+}
+function splitWords(element) {
+  const original = element.innerHTML;
+  const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(node => {
+    const fragment = document.createDocumentFragment();
+    node.textContent.split(/(\s+)/).forEach(part => {
+      if (!part) return;
+      if (/^\s+$/.test(part)) { fragment.append(part); return; }
+      const word = document.createElement('span');
+      word.className = 'ink__word';
+      word.textContent = part;
+      fragment.append(word);
+    });
+    node.replaceWith(fragment);
+  });
+  return () => { element.innerHTML = original; };
+}
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const bound = name => [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+  const rise = bound('rise'), ink = bound('ink'), iris = bound('iris');
+  if (!rise.length && !ink.length && !iris.length) return;
+  const first = section.getBoundingClientRect().top < innerHeight;
+  if (rise.length) queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    rise.forEach((element, index) => ScrollTrigger.create({ id: `effect:rise:${section.id}:${index}`, trigger: element, start: 'top 88%', once: true, animation: effects.rise(element, { paused: true }) }));
+  }), { first, id: `effect:rise:${section.id}` });
+  if (ink.length) queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const reverts = ink.map(splitWords);
+    ink.forEach((element, index) => ScrollTrigger.create({ id: `effect:ink:${section.id}:${index}`, trigger: element, start: 'top 88%', end: 'bottom 68%', scrub: 0.4, animation: effects.ink(element) }));
+    return () => reverts.forEach(revert => revert());
+  }), { first, id: `effect:ink:${section.id}` });
+  if (iris.length) queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    iris.forEach((element, index) => ScrollTrigger.create({ id: `effect:iris:${section.id}:${index}`, trigger: element, start: 'top 86%', once: true, animation: effects.iris(element, { paused: true }) }));
+  }), { first, id: `effect:iris:${section.id}` });
+});
+</script>
+<script data-8b-part="scene:hero">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    if (!adjacent('hero', 'statement')) return;
+    const hero = document.getElementById('hero');
+    const target = document.getElementById('statement').querySelector('.statement__dot');
+    const aperture = hero.querySelector('.hero__aperture');
+    const geometry = () => {
+      const from = layoutBox(aperture), to = layoutBox(target);
+      return { x: to.cx - from.cx, y: to.cy - from.cy, scale: to.w / from.w };
+    };
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'hero:exit', trigger: hero, start: 'bottom bottom', end: 'bottom 30%', scrub: true, invalidateOnRefresh: true } })
+      .to(aperture, { x: () => geometry().x, y: () => geometry().y, ease: 'power1.inOut', duration: 1 }, 0)
+      .to(aperture, { scale: () => geometry().scale, ease: 'power3.in', duration: 1 }, 0)
+      .to(hero.querySelector('.hero__tint'), { opacity: 1, ease: 'power2.in', duration: 0.6 }, 0.4)
+      .to(hero.querySelector('.hero__orbit'), { opacity: 0, duration: 0.3 }, 0)
+      .to(hero.querySelector('.hero__word'), { xPercent: () => (matchMedia('(min-width: 900px) and (orientation: landscape)').matches ? -14 : 0), ease: 'power1.in', duration: 1 }, 0)
+      .to(hero.querySelector('.hero__intro'), { y: -70, ease: 'power1.in', duration: 1 }, 0);
+  });
+}, { first: true, id: 'scene:hero' });
+</script>
+<script data-8b-part="scene:statement">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const statement = document.getElementById('statement');
+    const lines = statement.querySelectorAll('.statement__line');
+    if (adjacent('hero', 'statement')) {
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'statement:entry', trigger: statement, start: 'top bottom', end: 'top 30%', scrub: true } })
+        .fromTo(lines, { yPercent: 85, xPercent: index => (index ? 9 : -6) }, { yPercent: 0, xPercent: 0, duration: 0.8, stagger: 0.12, ease: 'power2.out' }, 0)
+        .fromTo(statement.querySelector('.statement__dot'), { scale: 0 }, { scale: 1, duration: 0.1 }, 0.9);
+    }
+    const items = statement.querySelectorAll('.statement__index li');
+    gsap.from(items, { yPercent: 70, opacity: 0, duration: 0.8, stagger: 0.07, ease: 'expo.out', scrollTrigger: { id: 'statement:index', trigger: statement.querySelector('.statement__index'), start: 'top 85%', once: true } });
+  });
+}, { id: 'scene:statement' });
+</script>
+<script data-8b-part="scene:work">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const work = document.getElementById('work');
+    const track = work.querySelector('.work__track');
+    const frame = work.querySelector('.work__window');
+    work.classList.add('is-track');
+    const stage = work.querySelector('.work__stage');
+    const run = () => Math.max(0, track.offsetWidth - (work.clientWidth - 2 * parseFloat(getComputedStyle(stage).paddingLeft)));
+    const setRun = () => work.style.setProperty('--run', `${Math.round(run())}px`);
+    setRun();
+    ScrollTrigger.addEventListener('refreshInit', setRun);
+    gsap.fromTo(work.querySelector('.work__plate'), { clipPath: 'inset(0% 3.2% 0% 3.2% round 44px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'power1.out', scrollTrigger: { id: 'work:plate', trigger: work, start: 'top bottom', end: 'top 15%', scrub: true } });
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'work', trigger: work, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true } });
+    timeline.to(track, { x: () => -run() }, 0);
+    work.querySelectorAll('.case__img').forEach(image => timeline.fromTo(image, { xPercent: -5 }, { xPercent: 5 }, 0));
+    if (adjacent('work', 'again')) {
+      const cases = [...track.querySelectorAll('.case')];
+      const radius = () => (innerWidth < 700 ? innerWidth * 2.1 : innerWidth * 0.95);
+      const bend = card => {
+        const offset = layoutBox(frame).x + card.offsetLeft + card.offsetWidth / 2 - run() - innerWidth / 2;
+        const angle = offset / radius();
+        return { x: radius() * Math.sin(angle) - offset, y: radius() * (1 - Math.cos(angle)), rotation: angle * 180 / Math.PI };
+      };
+      const exit = gsap.timeline({ defaults: { ease: 'power1.in' }, scrollTrigger: { id: 'work:exit', trigger: work, start: 'bottom bottom', end: 'bottom 30%', scrub: true, invalidateOnRefresh: true } });
+      exit.to(frame, { x: () => -innerWidth * 0.2, duration: 1 }, 0);
+      cases.forEach(card => exit.to(card, { x: () => bend(card).x, y: () => bend(card).y, rotation: () => bend(card).rotation, duration: 1 }, 0));
+    }
+    return () => { work.classList.remove('is-track'); work.style.removeProperty('--run'); ScrollTrigger.removeEventListener('refreshInit', setRun); };
+  });
+}, { id: 'scene:work' });
+</script>
+<script data-8b-part="scene:again">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const again = document.getElementById('again');
+    const stage = again.querySelector('.again__stage');
+    const head = again.querySelector('.again__head');
+    const swing = again.querySelector('.again__swing');
+    const wheel = again.querySelector('.again__wheel');
+    const cards = [...wheel.querySelectorAll('.partner')];
+    again.classList.add('is-wheel');
+    cards.forEach((card, index) => card.style.setProperty('--i', index));
+    let step = 0, arcTop = 0, radius = 1;
+    const measure = () => {
+      const width = innerWidth, height = stage.offsetHeight;
+      const headBottom = head.offsetTop + head.offsetHeight;
+      const room = height - headBottom - innerHeight * 0.04;
+      const card = Math.max(180, Math.min(width * (width < 700 ? 0.7 : 0.28), (room - 32) / 1.25));
+      arcTop = headBottom + Math.max(28, (room - card * 1.25) * 0.4);
+      radius = Math.max(width * 0.95, card * 3.3);
+      step = 2 * Math.asin((card + Math.max(18, width * 0.024)) / (2 * radius)) * 180 / Math.PI;
+      again.style.setProperty('--card', `${card.toFixed(1)}px`);
+      again.style.setProperty('--radius', `${radius.toFixed(1)}px`);
+      again.style.setProperty('--step', `${step.toFixed(3)}deg`);
+      again.style.setProperty('--arc-top', `${arcTop.toFixed(1)}px`);
+      again.style.setProperty('--spin', `${Math.round(cards.length * innerHeight * 0.42)}px`);
+    };
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    gsap.fromTo(wheel, { rotation: () => step * 0.55 }, { rotation: () => -(cards.length - 0.45) * step, ease: 'none', scrollTrigger: { id: 'again', trigger: again, start: 'top 30%', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true } });
+    if (adjacent('work', 'again')) {
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'again:entry', trigger: again, start: 'top bottom', end: 'top 30%', scrub: true, invalidateOnRefresh: true } })
+        .fromTo(swing, { rotation: () => Math.max(4, Math.asin(Math.min(1, innerWidth * 0.3 / radius)) * 180 / Math.PI - step * 0.55) }, { rotation: 0, ease: 'power1.out' }, 0)
+        .fromTo(swing, { y: () => -(arcTop - 40) }, { y: 0, ease: 'power2.in' }, 0)
+        .fromTo(head, { yPercent: 45 }, { yPercent: 0, ease: 'power2.out' }, 0);
+    }
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      again.classList.remove('is-wheel');
+      ['--card', '--radius', '--step', '--arc-top', '--spin'].forEach(name => again.style.removeProperty(name));
+      cards.forEach(card => card.style.removeProperty('--i'));
+    };
+  });
+}, { id: 'scene:again' });
+</script>
+<script data-8b-part="scene:capabilities">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('capabilities');
+    const cards = [...section.querySelectorAll('.service')];
+    section.classList.add('is-deck');
+    cards.forEach((card, index) => card.style.setProperty('--i', index));
+    cards.forEach((card, index) => {
+      const next = cards[index + 1];
+      if (!next) return;
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `capabilities:${index}`, trigger: next, start: 'top bottom', end: () => `top ${parseFloat(getComputedStyle(next).top) || 0}px`, scrub: true, invalidateOnRefresh: true } })
+        .to(card, { scale: 0.9 }, 0)
+        .to(card.querySelector('.service__shade'), { opacity: 0.55 }, 0);
+    });
+    return () => { section.classList.remove('is-deck'); cards.forEach(card => card.style.removeProperty('--i')); };
+  });
+}, { id: 'scene:capabilities' });
+</script>
+<script data-8b-part="scene:method">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const method = document.getElementById('method');
+    const steps = [...method.querySelectorAll('.step')];
+    const stations = [...method.querySelectorAll('.method__station')];
+    method.classList.add('is-cycle');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'method', trigger: method.querySelector('.method__steps'), start: 'top 62%', end: 'bottom 62%', scrub: true } });
+    timeline.fromTo(method.querySelector('.method__arc'), { attr: { 'stroke-dashoffset': 1 } }, { attr: { 'stroke-dashoffset': 0 }, duration: 1 }, 0)
+      .fromTo(method.querySelector('.method__arm'), { rotation: 0 }, { rotation: 360, duration: 1 }, 0);
+    steps.forEach((step, index) => {
+      const at = index / steps.length;
+      timeline.fromTo(step, { opacity: 0.2 }, { opacity: 1, duration: 0.07 }, Math.max(0, at - 0.03));
+      if (stations[index]) timeline.fromTo(stations[index], { scale: 0.4 }, { scale: 1.35, duration: 0.05, ease: 'back.out(3)' }, at).to(stations[index], { scale: 1, duration: 0.08 }, at + 0.06);
+    });
+    return () => method.classList.remove('is-cycle');
+  });
+}, { id: 'scene:method' });
+</script>
+
+<script data-8b-part="section-script:footer">
+(() => {
+  const footer = document.getElementById('footer');
+  if ('IntersectionObserver' in window) new IntersectionObserver(([entry]) => footer.classList.toggle('is-offscreen', !entry.isIntersecting)).observe(footer);
+})();
+</script>
+<script data-8b-part="scene:studio">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const collage = document.querySelector('#studio .studio__collage');
+    const shots = [...collage.querySelectorAll('.shot')];
+    const tilt = [-8, 6, -4, 9, -6];
+    const offset = (shot, axis) => {
+      const centre = axis === 'x' ? collage.offsetWidth / 2 : Math.min(collage.offsetHeight / 2, innerHeight * 0.45);
+      const own = axis === 'x' ? shot.offsetLeft + shot.offsetWidth / 2 : shot.offsetTop + shot.offsetHeight / 2;
+      return centre - own;
+    };
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: { id: 'studio', trigger: collage, start: 'top 82%', end: () => (innerWidth < 900 ? 'top 10%' : 'center 55%'), scrub: true, invalidateOnRefresh: true } });
+    shots.forEach((shot, index) => timeline.fromTo(shot, { x: () => offset(shot, 'x'), y: () => offset(shot, 'y'), rotation: tilt[index % tilt.length], scale: 0.66 }, { x: 0, y: 0, rotation: 0, scale: 1, duration: 1 }, (shots.length - 1 - index) * 0.08));
+  });
+}, { id: 'scene:studio' });
+</script>
+<script data-8b-part="scene:footer">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const footer = document.getElementById('footer');
+    const aperture = footer.querySelector('.footer__aperture');
+    const dot = () => footer.querySelector('.footer__period').offsetWidth / aperture.offsetWidth;
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'footer', trigger: footer.querySelector('.footer__bye'), start: 'bottom bottom', end: 'bottom 55%', scrub: true, invalidateOnRefresh: true } })
+      .fromTo(aperture, { scale: dot }, { scale: 1, ease: 'power2.inOut', duration: 1 }, 0)
+      .fromTo(footer.querySelector('.footer__tint'), { opacity: 1 }, { opacity: 0, duration: 0.5 }, 0.45)
+      .fromTo(footer.querySelector('.footer__word'), { yPercent: 30 }, { yPercent: 0, ease: 'power2.out', duration: 0.8 }, 0);
+  });
+}, { id: 'scene:footer' });
+</script>
+
+
+<script>
+(function(){
+  document.querySelectorAll('.case').forEach(function(c){
+    var url=c.getAttribute('data-href'); if(!url){ c.style.cursor='default'; return; }
+    function go(){ window.open(url,'_blank','noopener'); }
+    c.addEventListener('click',go);
+    c.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
+  });
+})();
+</script>
+</body>
+</html>
